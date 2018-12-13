@@ -11,11 +11,7 @@
         "type": "image/jpg"
       },{
         "src": "img/icono_192x192.jpg",
-        "sizes": "125x125",
-        "type": "image/jpg"
-      },{
-        "src": "img/icono_225x225.jpg",
-        "sizes": "125x125",
+        "sizes": "192x192",
         "type": "image/jpg"
       }],
     "start_url": "/index.html",

@@ -4,22 +4,18 @@ xhttp.open("GET", "https://acensors.pythonanywhere.com/clientes/?format=json", t
 xhttp.send();
 
 xhttp.onload = function(){
-    var division = document.getElementById("contenedorCliente")
+    var div = document.getElementById("contenedorCliente")
     
-    while (division.firstChild) {
-        division.removeChild(division.firstChild);
+    while (div.firstChild) {
+        div.removeChild(div.firstChild);
     }    
-
-    var response = JSON.parse(xhttp.responseText);
-    var clientes = response;
+    var respuesta = JSON.parse(xhttp.responseText);
+    var clientes = respuesta;
     
-    var output = '';
+    var salida = '';
 
     for (var i = 0; i < clientes.length; i++) {
-            output +=   '<br><br><article>' + '<h2><b>'+clientes[i].nombre+'</h3></b>' + '<p><b>Dirección: </b>' +clientes[i].direccion+'</p>'
-                        +'<p><b>Ciudad: </b>' +clientes[i].ciudad+'</p>'+'<p><b>Teléfono: </b>' +clientes[i].telefono+'</p>'
-                        +'<p><b>Email: </b>' +clientes[i].correo+'</p>'+'</article>'+'<p><b>Comuna: </b>' +clientes[i].comuna+'</p>';                   
+        salida +='<br><br><article>' + '<h2><b>'+clientes[i].nombre+'</h3></b>' + '<p><b>Dirección: </b>' +clientes[i].direccion+'</p>'+'<p><b>Ciudad: </b>' +clientes[i].ciudad+'</p>'+'<p><b>Teléfono: </b>' +clientes[i].telefono+'</p>'+'<p><b>Email: </b>' +clientes[i].correo+'</p>'+'</article>'+'<p><b>Comuna: </b>' +clientes[i].comuna+'</p>'; 
     }
-
-    document.getElementById('contenedorCliente').innerHTML = output;
+    document.getElementById('contenedorCliente').innerHTML = salida;
 };

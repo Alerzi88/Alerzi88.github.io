@@ -5,7 +5,6 @@ function ingresoValido() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "https://acensors.pythonanywhere.com/tecnicos/?format=json", true);
     xhttp.send();
-    console.log("holaaaaa");
     xhttp.onload = function(){
         
 
@@ -15,26 +14,22 @@ function ingresoValido() {
 
         var respuesta = JSON.parse(xhttp.responseText);
         var user = respuesta;
-        var valida = 0
+        var bueno = 0
         
         for (var i = 0; i < user.length; i++) {
 
-                console.log(user[i].email)
-                console.log(user[i].password)
-
             if(user[i].email == correo && user[i].password == password_one){
 
-                
                 window.location.replace("listar_orden.html");   
-                valida = 1   
+                bueno = 1   
                 break;      
             }
             else{
-                valida = 0    
+                bueno = 0    
             }            
         }
         
-        if(valida == 0)
+        if(bueno == 0)
         {
             document.getElementById("alert").innerHTML = "email o correo invalido"        
         }
