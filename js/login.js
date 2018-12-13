@@ -3,8 +3,10 @@
 
 function ingresoValido() {    
     var xhttp = new XMLHttpRequest();
-
+    xhttp.open("GET", "https://acensors.pythonanywhere.com/tecnicos/?format=json", true);
+    xhttp.send();
     xhttp.onload = function(){
+        
 
         var correo = document.getElementById("id_email").value
         var password_one = document.getElementById("id_password").value
@@ -32,7 +34,6 @@ function ingresoValido() {
             document.getElementById("alert").innerHTML = "email o correo invalido"        
         }
     };
-    xhttp.open("GET", "https://acensors.pythonanywhere.com/tecnicos/?format=json", true);
-    xhttp.send();
+    
 
 }
