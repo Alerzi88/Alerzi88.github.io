@@ -25,7 +25,7 @@ function ingresoValido() {
             if(user[i].email == correo && user[i].password == password_one){
 
                 
-                window.location.replace("https://www.youtube.com/");   
+                console.log("bien");
                 valida = 1   
                 break;      
             }
