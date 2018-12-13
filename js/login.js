@@ -1,7 +1,7 @@
 function ingresoValido() {    
     var xhttp = new XMLHttpRequest();
 
-    xhttp.open("GET", "http://acensors.pythonanywhere.com/tecnicos/?format=json", true);
+    xhttp.open("GET", "https://acensors.pythonanywhere.com/tecnicos/?format=json", true);
     xhttp.send();
 
     xhttp.onload = function(){

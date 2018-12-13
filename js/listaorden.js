@@ -1,6 +1,6 @@
 var xhttp = new XMLHttpRequest();
 
-xhttp.open("GET", "http://acensors.pythonanywhere.com/orden/?format=json", true);
+xhttp.open("GET", "https://acensors.pythonanywhere.com/orden/?format=json", true);
 xhttp.send();
 
 xhttp.onload = function(){

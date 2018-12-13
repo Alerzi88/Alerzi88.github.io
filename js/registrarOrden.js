@@ -7,7 +7,7 @@ formulario.addEventListener('submit', function(e){
 
     console.log(datos.get('horainicio'))
 
-    fetch('http://acensors.pythonanywhere.com/orden/', {
+    fetch('https://acensors.pythonanywhere.com/orden/', {
         method : 'POST',
         body : datos
     })
@@ -19,7 +19,7 @@ formulario.addEventListener('submit', function(e){
                 icon: "img/icono_192x192.jpg",
                 timeout: 4000,
                 onClick: function(){                  
-                    window.location.replace("http://alerzi88.github.io/ingresar.html");
+                    window.location.replace("https://alerzi88.github.io/ingresar.html");
                     this.close();
                 }
             });
