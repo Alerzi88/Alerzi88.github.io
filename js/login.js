@@ -1,42 +1,38 @@
+
+
+
 function ingresoValido() {    
     var xhttp = new XMLHttpRequest();
 
-    xhttp.open("GET", "https://acensors.pythonanywhere.com/tecnicos/?format=json", true);
-    xhttp.send();
-
     xhttp.onload = function(){
-        console.log("no") 
 
         var correo = document.getElementById("id_email").value
         var password_one = document.getElementById("id_password").value
-        var war = document.getElementById("warning")
+        var war = document.getElementById("alert")
 
-        console.log(correo) 
-        console.log(password_one)   
-
-        var response = JSON.parse(xhttp.responseText);
-        var usuario = response;
+        var respuesta = JSON.parse(xhttp.responseText);
+        var user = respuesta;
         var valida = 0
 
-        for (var i = 0; i < usuario.length; i++) {
+        for (var i = 0; i < user.length; i++) {
 
-            if(usuario[i].email == correo && usuario[i].password == password_one){
-                window.location.replace("listar_orden.html");  
-                console.log("si")
+            if(user[i].email == correo && user[i].password == password_one){
+
+                window.location.replace("https://alerzi88.github.io/listar_orden");  
                 valida = 1   
                 break;      
             }
             else{
-                valida = 0
-                console.log("no")  
-                console.log(usuario[i].email)
-                console.log(usuario[i].password)     
+                valida = 0    
             }            
         }
         
         if(valida == 0)
         {
-            document.getElementById("warning").innerHTML = "Email o Contraseña incorrectos"        
+            document.getElementById("alert").innerHTML = "email o correo invalido"        
         }
     };
+    xhttp.open("GET", "https://acensors.pythonanywhere.com/tecnicos/?format=json", true);
+    xhttp.send();
+
 }
