@@ -17,11 +17,13 @@ function ingresoValido() {
         var valida = 0
 
         for (var i = 0; i < user.length; i++) {
+            
+                console.log(user[i].email)
+                console.log(user[i].password)
 
             if(user[i].email == correo && user[i].password == password_one){
 
-                console.log(user[i].email)
-                console.log(user[i].password)
+                
                 window.location.replace("listar_orden.html");   
                 valida = 1   
                 break;      
