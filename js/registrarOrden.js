@@ -1,4 +1,4 @@
-var formulario = document.getElementById("formulario_1")
+var formulario = document.getElementById("formularioRegistroOrden")
 
 formulario.addEventListener('submit', function(e){
     e.preventDefault();
@@ -7,7 +7,7 @@ formulario.addEventListener('submit', function(e){
 
     console.log(datos.get('horainicio'))
 
-    fetch('https://liftup.pythonanywhere.com/forma/', {
+    fetch('http://acensors.pythonanywhere.com/orden/', {
         method : 'POST',
         body : datos
     })
@@ -15,11 +15,11 @@ formulario.addEventListener('submit', function(e){
         .then(data => {
             console.log(data)
             Push.create("Nueva Orden de Trabajo",{
-                body: "Se creo una nueva orden, ¡Inicia sesión para revisarla!",
-                icon: "images/icon192x192.png",
-                timeout: 8000,
+                body: "Se creo una nueva orden, Si quieres verla inicia session",
+                icon: "img/icono_192x192.jpg",
+                timeout: 4000,
                 onClick: function(){                  
-                    window.location.replace("https://miguelmartinez20.github.io/login.html");
+                    window.location.replace("http://alerzi88.github.io/ingresar.html");
                     this.close();
                 }
             });

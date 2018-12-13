@@ -7,8 +7,8 @@ function ingresoValido() {
     xhttp.onload = function(){
         console.log("no") 
 
-        var correo = document.getElementById("id_correo").value
-        var contraseña = document.getElementById("id_contraseña").value
+        var correo = document.getElementById("id_email").value
+        var contraseña = document.getElementById("id_password").value
         var war = document.getElementById("warning")
 
         console.log(correo) 
