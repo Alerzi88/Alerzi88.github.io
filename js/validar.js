@@ -15,7 +15,7 @@ function sinNumeros(){
 
 
 function CorreoValido() {
-    var correo = document.getElementById("id_correo")
+    var correo = document.getElementById("id_email")
     var CorreoValid = document.getElementById("CorreoValid")
         if(correo.value.includes("@") && ((correo.value.includes(".com")) || (correo.value.includes(".cl"))|| (correo.value.includes(".net")))){
             CorreoValid.innerHTML = ""
