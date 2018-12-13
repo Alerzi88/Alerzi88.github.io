@@ -1,4 +1,4 @@
-var cacheName = "AscensorS-v1";
+var cacheName = "AscensorS-v2";
 var filesToCache = [
     "/",
     "/index.html",
