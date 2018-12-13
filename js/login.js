@@ -16,7 +16,7 @@ function ingresoValido() {
         var respuesta = JSON.parse(xhttp.responseText);
         var user = respuesta;
         var valida = 0
-
+        
         for (var i = 0; i < user.length; i++) {
 
                 console.log(user[i].email)
@@ -25,7 +25,7 @@ function ingresoValido() {
             if(user[i].email == correo && user[i].password == password_one){
 
                 
-                console.log("bien");
+                window.location.replace("listar_orden.html");   
                 valida = 1   
                 break;      
             }
