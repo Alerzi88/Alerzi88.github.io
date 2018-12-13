@@ -18,7 +18,7 @@ function ingresoValido() {
 
             if(user[i].email == correo && user[i].password == password_one){
 
-                window.location.replace("https://alerzi88.github.io/listar_orden");  
+                window.location.replace("https://www.youtube.com/");  
                 valida = 1   
                 break;      
             }
