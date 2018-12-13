@@ -5,6 +5,7 @@ function ingresoValido() {
     var xhttp = new XMLHttpRequest();
     xhttp.open("GET", "https://acensors.pythonanywhere.com/tecnicos/?format=json", true);
     xhttp.send();
+    console.log("holaaaaa");
     xhttp.onload = function(){
         
 
@@ -17,7 +18,7 @@ function ingresoValido() {
         var valida = 0
 
         for (var i = 0; i < user.length; i++) {
-            
+
                 console.log(user[i].email)
                 console.log(user[i].password)
 
