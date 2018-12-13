@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>AscensorS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/portada.css">
+        <link rel="stylesheet" href="css/cuadricula.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/registrocliente.css">
+        <link rel="stylesheet" href="css/registrorden.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="contenedor">
+                <h1>AscensorS</h1>
+                <input type="checkbox" id="menu-rp">
+                <label for="menu-rp">&#9776;</label>
+                
+                <nav class="menu">
+                    <a href="listar_cliente.html">Clientes</a>
+                    <a href="listar_orden.html">Ordenes</a>
+                    <a href="index.html">Cerrar Sesion</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section id="portada">
+                <img src="img/portada.jpg">
+            </section>
+            
+            <section id="formularioRegistroOrden">
+                    <h2>Registra la Orden</h2>
+                    <div class="RegistroOrden">
+                        <form action="." method="POST">
+                            <p><label for="id_cliente">Cliente Atendido:</label><br>
+                                <input type="text" name="cliente" required id="id_cliente" onkeyup="sinNumerosT()">
+                            </p>
+                            
+                            <p><label for="id_fecha">Fecha:</label><br>
+                                <input type="date" name="fecha" required id="id_fecha">
+                            </p>
+                            
+                            <p><label for="id_horainicio">Hora Inicio:</label><br>
+                                <input type="datetime-local" name="nombre" required id="id_horainicio">
+                            </p>
+                            
+                            <p><label for="id_horatermino">Hora Termino:</label><br>
+                                <input type="datetime-local" name="horatermino" required id="id_horatermino"onfocusout="ValidarFecha()">
+                            </p>
+                            
+                            <p><label for="id_ascensor">ID Ascensor:</label><br>
+                                <input type="text" name="ascensor" required id="id_ascensor"onkeyup="SinLetrasT()">
+                            </p>
+                            
+                            <p><label for="id_modeloascensor">Modelo Ascensor:</label><br>
+                                <input type="text" name="modeloascensor" required id="id_modeloascensor">
+                            </p>
+                            
+                            <p><label for="id_fallasdetectadas">Fallas Detectadas:</label><br>
+                                <input type="text" name="fallasdetectadas" required id="id_fallasdetectadas">
+                            </p>
+                            
+                            <p><label for="id_repa">Reparaciones:</label><br>
+                                <input type="text" name="repa" required id="id_repa">
+                            </p>
+                            
+                            <p><label for="id_piezas">Piezas detectadas:</label><br>
+                                <input type="text" name="piezas" required id="id_piezas">
+                            </p>
+                            
+                            <p><label for="id_nombre">Nombre Trabajador:</label><br>
+                                <input type="text" name="nombre" required id="id_nombre" onkeyup="sinNumerosT()">
+                            </p>
+
+                <button class="botonregistrar" type="submit" value="RegistroOrden">Registrar Orden</button>
+        
+                        </form>
+                    </div>
+            </section>
+            
+            
+        </main>
+        
+        <footer>
+            <div class="contenedor">
+                <p class="copyright">AscensorS &copy; 2018</p>
+                <div class="redes">
+                    <a href="#"><img src="img/twitter.png"></a>
+                    <a href="#"><img src="img/facebook.png"></a>
+                    <a href="#"><img src="img/instagram.png"></a>
+                
+                </div>
+                
+            </div>
+        </footer>
+
+    </body>
+</html>

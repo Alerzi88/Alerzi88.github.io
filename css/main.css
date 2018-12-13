@@ -1,0 +1,102 @@
+/* TODO */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*CUERPO*/
+body
+{
+    font-family: 'Kanit', sans-serif;
+}
+
+/* HEADER */
+header
+{
+    width: 100%;
+    height: 70px;
+    background: rgb(2, 3, 71);
+    color: #ffffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/*TODOS LOS CONTENEDORES*/
+.contenedor
+{
+    width: 95%;
+    margin: auto;
+}
+
+/* TITULO WEB */
+h1
+{
+    float: left;
+}
+
+/* HEADER DEL CONTENEDOR*/
+header .contenedor
+{
+    display: table;
+}
+
+/* TODOS */
+section
+{
+    width: 100%;
+}
+
+/* CONTENEDOR FOOTER */
+footer .contenedor
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/* FOOTER COPYRIGHT */
+.copyright
+{
+    font-size: 25px;
+}
+
+/* REDES */
+.redes
+{
+    margin-top: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* ENLACES REDES */
+.redes a
+{
+    text-decoration: none;
+}
+
+/*768px*/
+@media (min-width: 768px){
+    .redes
+    {
+        width: auto;
+    }
+    
+    footer .contenedor
+    {
+        justify-content: space-between;
+    }
+}
+
+/*1024px*/
+@media (min-width: 1024px){
+    .contenedor
+    {
+        width: 1000px;
+    }
+}

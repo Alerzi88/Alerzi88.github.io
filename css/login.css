@@ -1,0 +1,115 @@
+#formularioIngresar .login
+{
+    text-align: center;
+}
+
+#formularioIngresar h2
+{
+    margin: 20px;
+    font-size: 40px;
+}
+
+#formularioIngresar input
+    {
+        font-size: 20px;
+        margin: 5%;
+    }
+
+#formularioIngresar p
+{
+    margin: 30px;
+    font-size: 30px;
+}
+
+.botoningreso
+{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    background: rgba(44, 30, 124, 0.883);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 10%;
+}
+
+.botoningreso:hover
+{
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    background: #109922;
+    color: #fff;
+    padding: 10px;
+    margin: 10%;
+}
+
+/*768px*/
+@media (min-width:768px){
+    
+    #formularioIngresar input
+    {
+        font-size: 30px;
+        margin: 3%;
+    }
+    
+    .botoningreso
+    {
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        width: 300px;
+        background: rgba(44, 30, 124, 0.883);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 5%;
+    }
+
+    .botoningreso:hover
+    {
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        width: 300px;
+        background: #109922;
+        color: #fff;
+        padding: 10px;
+        margin: 5%;
+    }
+}
+
+/*1024px*/
+@media (min-width:1024px){
+    
+    #formularioIngresar input
+    {
+        font-size: 30px;
+        margin: 2%;
+    }
+    
+    .botoningreso
+    {
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        width: 300px;
+        background: rgba(44, 30, 124, 0.883);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 3%;
+    }
+
+    .botoningreso:hover
+    {
+        font-size: 40px;
+        text-align: center;
+        text-decoration: none;
+        width: 300px;
+        background: #109922;
+        color: #fff;
+        padding: 10px;
+        margin: 3%;
+    }
+    
+}

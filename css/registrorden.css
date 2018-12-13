@@ -1,0 +1,131 @@
+#formularioRegistroOrden
+{
+    text-align: center;
+}
+
+#formularioRegistroOrden h2
+{
+    font-size: 30px;
+    margin: 4%;
+}
+
+#formularioRegistroOrden .RegistroOrden
+{
+    margin: 20px;
+}
+
+#formularioRegistroOrden input
+{
+    font-size: 22px;
+}
+
+#formularioRegistroOrden label
+{
+    font-size: 22px;
+}
+
+.botonregistrar
+{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    background: rgba(44, 30, 124, 0.883);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    margin: 5%;
+}
+
+.botonregistrar:hover
+{
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    background: #109922;
+    color: #fff;
+    padding: 10px;
+    margin: 5%;
+}
+
+/*768px*/
+@media (min-width:768px){
+    
+    #formularioRegistroOrden input
+    {
+        font-size: 35px;
+    }
+
+    #formularioRegistroOrden label
+    {
+        font-size: 35px;
+    }
+    
+    .botonregistrar
+    {
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+        width: 250px;
+        background: rgba(44, 30, 124, 0.883);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 5%;
+    }
+
+    .botonregistrar:hover
+    {
+        font-size: 25px;
+        text-align: center;
+        text-decoration: none;
+        width: 250px;
+        background: #109922;
+        color: #fff;
+        padding: 10px;
+        margin: 5%;
+    }
+    
+}
+
+@media (min-width: 1024px){
+    
+    #formularioRegistroOrden input
+    {
+        font-size: 35px;
+        width: 70%;
+    }
+
+    #formularioRegistroOrden label
+    {
+        font-size: 35px;
+        padding: 15px;
+    }
+    
+    .botonregistrar
+    {
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        width: 250px;
+        background: rgba(44, 30, 124, 0.883);
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        margin: 5%;
+    }
+
+    .botonregistrar:hover
+    {
+        font-size: 30px;
+        text-align: center;
+        text-decoration: none;
+        width: 250px;
+        background: #109922;
+        color: #fff;
+        padding: 10px;
+        margin: 5%;
+    }
+    
+}
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>AscensorS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/portada.css">
+        <link rel="stylesheet" href="css/cuadricula.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet" href="css/registrocliente.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="contenedor">
+                <article class="titulo"><a href="index.html"><h1>AscensorS 
+                </h1></a></article>
+                <input type="checkbox" id="menu-rp">
+                <label for="menu-rp">&#9776;</label>
+                
+                <nav class="menu">
+                    <a href="listar_cliente.html">Clientes</a>
+                    <a href="listar_orden.html">Ordenes</a>
+                    <a href="index.html">Cerrar Sesion</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section id="portada">
+                <img src="img/portada.jpg">
+            </section>
+            
+            <section id="formularioRegistrarCliente">
+                    <article class="cont_form">
+                    <h2 id="formulario__titulo">Registra a Nuestro Cliente</h2>
+                    <div class="Register">
+                        <form action="." method="POST">
+                                <h3>Telefono:</h3>
+                            <p><label class="formulario__label" for="id_telefono"></label><br>
+                                <input class="formulario__input" type="text" name="telefono" required id="id_telefono" onkeyup="SinLetras()" required pattern="[0-9]{9}"
+                                placeholder="Ingrese Telefono valido">
+                            </p>
+                                <h3>Ciudad:</h3>
+                            <p><label class="formulario__label" for="id_ciudad"></label><br>
+                                <input class="formulario__input" type="text" name="ciudad" onkeyup="sinNumeros()" required id="id_ciudad" placeholder="Ingrese Ciudad">
+                            </p>
+                                <h3>Nombre:</h3>
+                            <p><label class="formulario__label" for="id_nombre"></label><br>
+                                <input class="formulario__input" type="text" name="nombre" required id="id_nombre" onkeyup="sinNumeros()">
+                            </p>
+                                <h3>Direccion:</h3>
+                            <p><label class="formulario__label" for="id_direccion"></label><br>
+                                <input class="formulario__input" type="text" name="direccion" required id="id_direccion" placeholder="Ingrese Direccion">
+                            </p>
+                                <h3>Comuna:</h3>
+                            <p><label class="formulario__label" for="id_comuna"></label><br>
+                                <input class="formulario__input" type="text" name="comuna" onkeyup="sinNumeros()" required id="id_comuna" placeholder="Ingrese Comuna" >
+                            </p>
+                                <h3>Correo:</h3>
+                            <p><label class="formulario__label" for="id_correo"></label><br>
+                                <input class="formulario__input" type="text" name="correo" required id="id_correo" placeholder="Ingrese Correo" onfocusout="CorreoValido()">
+                            </p>
+    
+                            
+
+                <button class="formulario__submit" type="submit" value="Register">Ingresar</button>
+        
+                        </form>
+                    </article>
+                    </div>
+            </section>
+            
+            
+        </main>
+        
+        <footer>
+            <div class="contenedor">
+                <p class="copyright">AscensorS &copy; 2018</p>
+                <div class="redes">
+                    <a href="#">F</a>
+                    <a href="#">I</a>
+                    <a href="#">T</a>
+                
+                </div>
+                
+            </div>
+        </footer>
+
+    </body>
+</html>

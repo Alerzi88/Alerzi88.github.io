@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>AscensorS</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link href="https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/menu.css">
+        <link rel="stylesheet" href="css/portada.css">
+        <link rel="stylesheet" href="css/cuadricula.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    
+    <body>
+        <header>
+            <div class="contenedor">
+                <h1>AscensorS</h1>
+                <input type="checkbox" id="menu-rp">
+                <label for="menu-rp">&#9776;</label>
+                
+                <nav class="menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="ingresar.html">Entrar</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main>
+            <section id="portada">
+                <img src="img/portada.jpg">
+            </section>
+            
+            <section id="formularioIngresar">
+                    <h2>Logueate</h2>
+                    <div class="login">
+                        <form action="." method="POST">
+                            <p><label for="id_correo">Email Electronico:</label><br>
+                                <input type="text" name="email" onfocusout="CorreoValido()" required id="id_email" placeholder="Ingrese su Correo">>
+                            </p>
+    
+                            <p><label for="id_contraseña">Contraseña:</label><br>
+                                <input type="password" name="password" required id="id_password" placeholder="Ingrese su Contraseña">
+                            </p>
+
+                <button class="botoningreso" type="submit" value="Login" onclick="login()">Ingresar</button>
+        
+                        </form>
+                    </div>
+            </section>
+            
+            
+        </main>
+        
+        <footer>
+            <div class="contenedor">
+                <p class="copyright">AscensorS &copy; 2018</p>
+                <div class="redes">
+                    <a href="#"><img src="img/twitter.png"></a>
+                    <a href="#"><img src="img/facebook.png"></a>
+                    <a href="#"><img src="img/instagram.png"></a>
+                
+                </div>
+                
+            </div>
+        </footer>
+
+    </body>
+</html>

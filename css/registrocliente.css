@@ -1,0 +1,78 @@
+#formularioRegistrarCliente {
+    width: 100%;
+    justify-content: center;
+    position: unset;
+    text-shadow: black 7px;
+    margin-top: 84px;
+    /* height: 100%; */
+    text-align: left;
+    padding-top: 10%;
+    width: 500px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    }
+
+.cont_form{
+    width:100%;
+    margin-top: 40%;
+    margin: 0 auto;
+    padding: 1em;
+    border: solid black 4px;
+    background-color: aliceblue;
+    position: relative;
+    box-shadow: 0 0 20px 4px rgba(0,0,0,0.3);
+}
+
+
+#formulario__titulo {
+    text-align: center;
+    margin-top: 0;
+    margin:auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: rgba(0,0,0,0.7);
+}
+.formulario__input, .formulario__label, .formulario__submit {
+  display: block;
+  width: 100%;
+  font-size: 1.3em;
+}
+.formulario__input {
+  padding: 20px;
+  background: rgba(0,0,0,0.1);
+  border: 1px solid rgba(0,0,0,0.3);
+  margin-bottom: 40px;
+}
+.formulario__input:focus {
+  outline: 1px solid rgba(0,0,0,0.7);
+}
+.formulario__input:focus + .formulario__label{
+  margin-top: -135px;
+}
+.formulario__label {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: -20;
+  color: rgba(0,0,0,0.5);
+  transition: all 0.2s;
+}
+.formulario__submit {
+    
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    
+}
+
+.Formulario_p h3{
+    text-align: left;
+    
+}
+
+
