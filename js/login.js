@@ -8,11 +8,11 @@ function ingresoValido() {
         console.log("no") 
 
         var correo = document.getElementById("id_email").value
-        var contraseña = document.getElementById("id_password").value
+        var password_one = document.getElementById("id_password").value
         var war = document.getElementById("warning")
 
         console.log(correo) 
-        console.log(contraseña)   
+        console.log(password_one)   
 
         var response = JSON.parse(xhttp.responseText);
         var usuario = response;
@@ -20,7 +20,7 @@ function ingresoValido() {
 
         for (var i = 0; i < usuario.length; i++) {
 
-            if(usuario[i].email == correo && usuario[i].password == contraseña){
+            if(usuario[i].email == correo && usuario[i].password == password_one){
                 window.location.replace("listar_orden.html");  
                 console.log("si")
                 valida = 1   

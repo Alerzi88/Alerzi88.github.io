@@ -11,14 +11,14 @@ xhttp.onload = function(){
     }    
 
     var response = JSON.parse(xhttp.responseText);
-    var cliente = response;
+    var clientes = response;
     
     var output = '';
 
-    for (var i = 0; i < cliente.length; i++) {
-            output +=   '<br><br><article>' + '<h2><b>'+cliente[i].nombre+'</h3></b>' + '<p><b>Dirección: </b>' +cliente[i].direccion+'</p>'
-                        +'<p><b>Ciudad: </b>' +cliente[i].ciudad+'</p>'+'<p><b>Teléfono: </b>' +cliente[i].telefono+'</p>'
-                        +'<p><b>Email: </b>' +cliente[i].correo+'</p>'+'</article>'+'<p><b>Comuna: </b>' +cliente[i].comuna+'</p>';                   
+    for (var i = 0; i < clientes.length; i++) {
+            output +=   '<br><br><article>' + '<h2><b>'+clientes[i].nombre+'</h3></b>' + '<p><b>Dirección: </b>' +clientes[i].direccion+'</p>'
+                        +'<p><b>Ciudad: </b>' +clientes[i].ciudad+'</p>'+'<p><b>Teléfono: </b>' +clientes[i].telefono+'</p>'
+                        +'<p><b>Email: </b>' +clientes[i].correo+'</p>'+'</article>'+'<p><b>Comuna: </b>' +clientes[i].comuna+'</p>';                   
     }
 
     document.getElementById('contenedorCliente').innerHTML = output;
