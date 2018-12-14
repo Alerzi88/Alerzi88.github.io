@@ -6,13 +6,24 @@ function sinNumeros(){
     var ciudad = document.getElementById("id_ciudad")
     var comuna = document.getElementById("id_comuna")
 
-    for(let i in numbers){
+    for(let i in noAdmitido){
         nombre.value = nombre.value.replace(noAdmitido[i], "")
         ciudad.value = ciudad.value.replace(noAdmitido[i], "")
         comuna.value = comuna.value.replace(noAdmitido[i], "")
     }
 }
 
+function CorreoValido() {
+    var correo = document.getElementById("id_correo")
+    var validacionEmail = document.getElementById("validacionEmail")
+        if(correo.value.includes("@") && ((correo.value.includes(".com")) || (correo.value.includes(".cl")) || (correo.value.includes(".net")))){
+            validacionEmail.innerHTML = ""
+        }
+        else
+        {
+            validacionEmail.innerHTML = "Ingrese un Email Valido"
+        }
+}
 
 function SinLetras(){
     var CaracteresNoValidos = 
