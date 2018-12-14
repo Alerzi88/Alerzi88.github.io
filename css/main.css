@@ -114,5 +114,52 @@ footer .contenedor
     .contenedor
     {
         width: 1000px;
-    }
+    } 
 }
+
+#listarCliente {
+    width: 100%;
+    justify-content: center;
+    position: unset;
+    text-shadow: black 7px;
+    margin-top: 84px;
+    /* height: 100%; */
+    text-align: left;
+    padding-top: 10%;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    border: black solid 2px;
+}
+#listarCliente h2{
+    margin-right: 400px;
+}   
+#listarCliente p{
+    margin-top: 20px;
+}     
+#listarOrden {
+    width: 100%;
+    justify-content: center;
+    position: unset;
+    text-shadow: black 7px;
+    margin-top: 84px;
+    /* height: 100%; */
+    text-align: left;
+    padding-top: 10%;
+    width: 600px;
+    max-width: 100%;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    position: relative;
+    border: black solid 2px;
+}
+#listarOrden h2{
+    margin-right: 400px;
+}   
+#listarOrden p{
+    margin-top: 20px;
+}     
