@@ -29,8 +29,8 @@ body{
 }
 
 .rowcuatro img{
-    width: 200px;
-    height: 200px;
+    width: 180px;
+    height: 180px;
   }
 
 .rowseis .imgc6{
@@ -169,13 +169,12 @@ body{
     
     
   .rowtres .columna{
-    width: 27%;
-    margin-left: 2%;
+    width: 90%;
+    margin-left: 40px;
     text-align: center;
-    font-size: 30px;
+    font-size: 28px;
     color: white;
     background: #16448A;
-    padding: 5%;
   }
   .rowtres .columna:nth-child(3n){
     margin-right: 0;
@@ -283,16 +282,7 @@ body{
     margin-right: 0;
   }
 
-  .rowtres .columna{
-    width: 30%;
-    margin-left: 1%;
-    text-align: center;
-    font-size: 45px;
-    color: white;
-    background: #16448A;
-    padding: 5%;
-  }
-  
+
   .rowcuatro .columna{
     width: 25%;
     background: white;
