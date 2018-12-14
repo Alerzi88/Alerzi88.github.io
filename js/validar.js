@@ -28,7 +28,7 @@ function SinLetras(){
 
 
 
-    for(let i in letters){
+    for(let i in CaracteresNoValidos){
         Telefono.value = Telefono.value.replace(CaracteresNoValidos[i], "")
     }
 }
@@ -43,7 +43,7 @@ function sinNumerosT(){
     var cliente = document.getElementById("id_cliente")
     var tecnico = document.getElementById("id_tecnico")
 
-    for(let i in numbers){
+    for(let i in noAdmitido){
         cliente.value = cliente.value.replace(noAdmitido[i], "")
         tecnico.value = tecnico.value.replace(noAdmitido[i], "")
     }
@@ -63,7 +63,7 @@ function SinLetrasT(){
     idAscensor.value = idAscensor.value.toLowerCase()
 
 
-    for(let i in letters){
+    for(let i in CaracteresNoValidos){
         idAscensor.value = idAscensor.value.replace(CaracteresNoValidos[i], "")
     }
 }
