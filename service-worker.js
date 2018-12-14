@@ -1,4 +1,4 @@
-var cacheName = "AscensorS-v2";
+var cacheName = "AscensorS-v6";
 var filesToCache = [
     "/",
     "/index.html",
@@ -9,7 +9,7 @@ var filesToCache = [
     "/registro_orden.html",
     "/js/app.js",
     "/js/listaorden.js",
-    "/js/listaCliente.js",
+    "/js/listacliente.js",
     "/js/login.js",
     "/js/registrarOrden.js",
     "/js/agregarCliente.js",
@@ -44,7 +44,6 @@ var filesToCache = [
     "/img/icono_125x125.jpg",
     "/img/icono_152x152.jpg",
     "/img/icono_192x192.jpg",
-    "/img/icono_225x225.jpg",
     "/css/portada.css",
     "/css/cuadricula.css",
     "/css/login.css",
