@@ -19,7 +19,8 @@
     <body>
         <header>
             <div class="contenedor">
-                <h1>AscensorS</h1>
+                <article class="titulo"><a href="index.html"><h1>AscensorS 
+                    </h1></a></article>
                 <input type="checkbox" id="menu-rp">
                 <label for="menu-rp">&#9776;</label>
                 
@@ -36,54 +37,59 @@
                 <img src="img/portada.jpg">
             </section>
             
-            <section id="formularioRegistroOrden">
-                    <h2>Registra la Orden</h2>
+            <section id="formularioRegistroOrdenes">
+                    <article class="cont_form">
+                    <h2 id="formulario__titulo">Registra la Orden</h2>
                     <div class="RegistroOrden">
-                        <form action="." method="POST">
-                            <p><label for="id_cliente">Cliente Atendido:</label><br>
-                                <input type="text" name="cliente" required id="id_cliente" onkeyup="sinNumerosT()">
-                            </p>
                             
-                            <p><label for="id_fecha">Fecha:</label><br>
-                                <input type="date" name="fecha" required id="id_fecha">
+                        <form id="formularioRegistroOrden" >
+                            <h3>Cliente Atendido:</h3>
+                            <p><label class="formulario__label" for="id_cliente"></label><br>
+                                <input class="formulario__input" type="text" name="cliente" required id="id_cliente" onkeyup="sinNumerosT()">
                             </p>
-                            
-                            <p><label for="id_horainicio">Hora Inicio:</label><br>
-                                <input type="datetime-local" name="nombre" required id="id_horainicio">
+                            <h3>Fecha:</h3>
+                            <p><label class="formulario__label" for="id_fecha"></label><br>
+                                <input class="formulario__input" type="date" name="fecha" required id="id_fecha">
                             </p>
-                            
-                            <p><label for="id_horatermino">Hora Termino:</label><br>
-                                <input type="datetime-local" name="horatermino" required id="id_horatermino"onfocusout="ValidarFecha()">
+                            <h3>Hora Inicio:</h3>
+                            <p><label class="formulario__label" for="id_horainicio"></label><br>
+                                <input class="formulario__input" type="datetime-local" name="nombre" required id="id_horainicio">
                             </p>
-                            
-                            <p><label for="id_ascensor">ID Ascensor:</label><br>
-                                <input type="text" name="ascensor" required id="id_ascensor"onkeyup="SinLetrasT()">
+                            <h3>Hora Termino:</h3>
+                            <p><label class="formulario__label" for="id_horatermino"></label><br>
+                                <input class="formulario__input" type="datetime-local" name="horatermino" required id="id_horatermino"onfocusout="ValidarFecha()">
                             </p>
-                            
-                            <p><label for="id_modeloascensor">Modelo Ascensor:</label><br>
-                                <input type="text" name="modeloascensor" required id="id_modeloascensor">
+                            <h3>ID Ascensor:</h3>
+                            <p><label class="formulario__label" for="id_ascensor"></label><br>
+                                <input class="formulario__input" type="text" name="ascensor" required id="id_ascensor"onkeyup="SinLetrasT()">
                             </p>
-                            
-                            <p><label for="id_fallasdetectadas">Fallas Detectadas:</label><br>
-                                <input type="text" name="fallasdetectadas" required id="id_fallasdetectadas">
+                            <h3>Modelo Ascensor:</h3>
+                            <p><label class="formulario__label" for="id_modeloascensor"></label><br>
+                                <input class="formulario__input" type="text" name="modeloascensor" required id="id_modeloascensor">
                             </p>
-                            
-                            <p><label for="id_repa">Reparaciones:</label><br>
-                                <input type="text" name="repa" required id="id_repa">
+                            <h3>Fallas Detectadas:</h3>
+                            <p><label class="formulario__label" for="id_fallasdetectadas"></label><br>
+                                <input class="formulario__input" type="text" name="fallasdetectadas" required id="id_fallasdetectadas">
                             </p>
-                            
-                            <p><label for="id_piezas">Piezas detectadas:</label><br>
-                                <input type="text" name="piezas" required id="id_piezas">
+                            <h3>Reparaciones:</h3>
+                            <p><label class="formulario__label" for="id_repa"></label><br>
+                                <input class="formulario__input" type="text" name="repa" required id="id_repa">
                             </p>
-                            
-                            <p><label for="id_nombre">Nombre Trabajador:</label><br>
-                                <input type="text" name="nombre" required id="id_nombre" onkeyup="sinNumerosT()">
+                            <h3>Piezas detectadas:</h3>
+                            <p><label class="formulario__label" for="id_piezas"></label><br>
+                                <input class="formulario__input" type="text" name="piezas" required id="id_piezas">
+                            </p>
+                            <h3>Nombre Trabajador:</h3>
+                            <p><label class="formulario__label" for="id_nombre"></label><br>
+                                <input class="formulario__input" type="text" name="nombre" required id="id_nombre" onkeyup="sinNumerosT()">
                             </p>
 
-                <button class="botonregistrar" type="submit" value="RegistroOrden">Registrar Orden</button>
+                <button href="listar_orden" class="formulario__submit" type="submit">Registrar Orden</button>
         
                         </form>
+                    
                     </div>
+                </article>
             </section>
             
             

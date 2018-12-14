@@ -40,7 +40,7 @@
                     <article class="cont_form">
                     <h2 id="formulario__titulo">Registra a Nuestro Cliente</h2>
                     <div class="Register">
-                        <form action="." method="POST">
+                        <form id="formularioRegistrarCliente">
                                 <h3>Telefono:</h3>
                             <p><label class="formulario__label" for="id_telefono"></label><br>
                                 <input class="formulario__input" type="text" name="telefono" required id="id_telefono" onkeyup="SinLetras()" required pattern="[0-9]{9}"
@@ -69,7 +69,7 @@
     
                             
 
-                <button class="formulario__submit" type="submit" value="Register">Ingresar</button>
+                            <button href="listar_cliente" class="formulario__submit" type="submit">Ingresar</button>
         
                         </form>
                     </article>
@@ -81,15 +81,15 @@
         
         <footer>
             <div class="contenedor">
-                <p class="copyright">AscensorS &copy; 2018</p>
-                <div class="redes">
-                    <a href="#">F</a>
-                    <a href="#">I</a>
-                    <a href="#">T</a>
-                
+                    <p class="copyright">AscensorS &copy; 2018</p>
+                    <div class="redes">
+                        <a href="#"><img src="img/twitter.png"></a>
+                        <a href="#"><img src="img/facebook.png"></a>
+                        <a href="#"><img src="img/instagram.png"></a>
+                    
+                    </div>
+                    
                 </div>
-                
-            </div>
         </footer>
         <script src="js/agregarCliente.js"></script>
         <script src="js/validar.js"></script> 
