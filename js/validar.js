@@ -13,18 +13,6 @@ function sinNumeros(){
     }
 }
 
-function CorreoValido() {
-    var correo = document.getElementById("id_correo")
-    var validacionEmail = document.getElementById("validacionEmail")
-        if(correo.value.includes("@") && ((correo.value.includes(".com")) || (correo.value.includes(".cl")) || (correo.value.includes(".net")))){
-            validacionEmail.innerHTML = ""
-        }
-        else
-        {
-            validacionEmail.innerHTML = "Ingrese un Email Valido"
-        }
-}
-
 function SinLetras(){
     var CaracteresNoValidos = 
         [   "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", 
